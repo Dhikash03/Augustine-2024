@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block header %}
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+      <body class="home-template">
+      <!-- Page Header -->
+      <!-- Set your background image for this header on the line below. -->
+      <header id="blog-header" class="has-cover">
+        <!-- Partie Menu-->
+        <div class="inner2">
+          <nav id="navigation">
+            <span id="menu-button" class="nav-button">
+              <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+            </span>
+          </nav>
+          
+          <!-- Conteneur principal pour le carrousel -->
+  <div class="container">
+    <!-- Élément carrousel -->
+    <div class="carousel">
+        <!-- Conteneur interne pour les diapositives -->
+        <div class="carousel-inner">
+            <!-- Première diapositive -->
+            <div class="slide">
+                <!-- Image de la première diapositive -->
+                <img src="./images/file.jpg"
+                    alt="Image 1">
+                <div class="site-container">
+                  <p>Decouvrir</p>
+                </div>
+            </div>
+            <!-- Deuxième diapositive -->
+            <div class="slide">
+                <!-- Image de la deuxième diapositive -->
+                <img src="images/20160622_181938.jpg"
+                    alt="Image 2">
+            </div>
+            <!-- Troisième diapositive -->
+            <div class="slide">
+                <!-- Image de la troisième diapositive -->
+                <img src="images/20180705_213056.jpg"
+                    alt="Image 3">
+            </div>
+            <!-- Quatrième diapositive -->
+            <div class="slide">
+                <!-- Image de la quatrième diapositive -->
+                <img src="images/27740277570_ba1c7f7fd7_o.jpg"
+                    alt="Image 4">
+            </div>
+            <!-- Cinquième diapositive -->
+            <div class="slide">
+                <!-- Image de la cinquième diapositive -->
+                <img src="images/34046193744_691b6b4095_o.jpg"
+                    alt="Image 5">
+            </div>
+        </div>
+        <!-- Conteneur pour les boutons de navigation -->
+        <div class="carousel-controls">
+            <!-- Bouton pour passer à la diapositive précédente -->
+            <button id="prev">&lt;</button>
+            <!-- Bouton pour passer à la diapositive suivante -->
+            <button id="next">&gt;</button>
+        </div>
+        <!-- Conteneur pour les points de navigation -->
+        <div class="carousel-dots"></div>
+    </div>
+</div>
+    </header>
+
+{% endblock header %}
+
+
+{% block  content %}
+
+
+          <article class="post">
+          <div class="inner">
+              <header class="post-header">         
+                  <h2 class="post-title"><a href="./accueil/accueil.html" rel="bookmark" title="Permalink to Accueil">Accueil</a>
+                  </h2>
+                  <span class="post-meta">
+                          <a href="./author/equipe-cpi.html">Equipe cpi</a>
+                       | <time datetime="dim. 11 juin 2023">dim. 11 juin 2023</time>
+                  </span>
+                  <div class="clear"></div>
+              </header>
+                  <section class="post-excerpt">
+                      <p>
+                          Bienvenue ! Bienvenue sur notre site. Vous trouverez ici toutes les informations à propos de notre aventure, véhicules, participations et plus encore. Nous sommes une équipe de professeurs et d'étudiants qui prennons part chaque année au...
+                      </p>
+                  </section>
+              </div>
+          </article>
+    </main>
+  </div>
+    
+    <script src="theme/js/auto_slide.js" async></script>
+    
+  </body>
+  </html>
+
+  {% endblock content %}
