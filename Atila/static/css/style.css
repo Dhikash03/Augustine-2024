@@ -942,7 +942,7 @@ img {
 .inner {
     max-width: 32em;
     margin: 0 auto;
-    padding: 0 2em
+    padding: 10 2em
 }
 
 
@@ -1976,7 +1976,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media all and (max-width:) {
     html {
         font-size: 50%
     }
@@ -1995,7 +1995,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media all  and (max-width:) {
     .inner {
         padding: 0 16px
     }
@@ -2057,7 +2057,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media all and (max-width:) {
     .pagination .pagination-label {
         display: none
     }
@@ -2089,6 +2089,7 @@ body {
     /* Hauteur égale à 100% de la hauteur de la vue */
     flex-wrap: nowrap;
     /* Empêche les éléments de se placer sur plusieurs lignes */
+    z-index: -10;
 }
 /* Définition des diapositives */
 .slide {
@@ -2120,6 +2121,7 @@ body {
     justify-items: center;
     justify-content: space-between;
 }
+
 /* Style des boutons de contrôle */
 .carousel-controls button {
     
@@ -2160,7 +2162,7 @@ body {
     /* Ils sont placés au-dessus des autres éléments */
     left: 50%;
     /* La distance à gauche est de 50% */
-    right: 100%;
+    right: 50%;
     /* La distance à droite est de 50% */
     bottom: 10%;
     /*La distance du bas est de 10% */
